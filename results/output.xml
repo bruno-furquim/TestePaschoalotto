@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200116 20:47:35.986" generator="Robot 3.1.2 (Python 2.7.16 on win32)">
+<suite source="C:\Automação de Testes\TestePaschoalotto\specs\pesquisa_produtos.robot" id="s1" name="Pesquisa Produtos">
+<test id="s1-t1" name="Caso de teste 01: Buscar e verificar informações do produto Smartphone Samsung Galaxy A70">
+<kw name="Dado que será necessário realizar a busca do produto &quot;Smartphone Samsung Galaxy A70&quot;" library="pesquisa_produtos_resource">
+<kw name="Abrir navegador" library="start_end_browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${DEFAULT_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200116 20:47:36.264" level="INFO">Opening browser 'chrome' to base url 'https://www.americanas.com.br/'.</msg>
+<status status="PASS" endtime="20200116 20:47:45.113" starttime="20200116 20:47:36.264"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:47:45.116" starttime="20200116 20:47:45.114"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:47:45.117" starttime="20200116 20:47:45.117"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200116 20:47:49.480" starttime="20200116 20:47:45.118"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Americanas.com - A maior loja. Os menores preços.</arg>
+</arguments>
+<msg timestamp="20200116 20:47:49.686" level="INFO">Page title is 'Americanas.com - A maior loja. Os menores preços.'.</msg>
+<status status="PASS" endtime="20200116 20:47:49.686" starttime="20200116 20:47:49.480"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:47:49.686" starttime="20200116 20:47:36.263"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:47:50.320" starttime="20200116 20:47:49.686"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>${SMARTPHONE}</arg>
+</arguments>
+<msg timestamp="20200116 20:47:50.320" level="INFO">Typing text 'Smartphone Samsung Galaxy A70' into text field 'xpath://input[@id='h_search-input']'.</msg>
+<status status="PASS" endtime="20200116 20:47:51.135" starttime="20200116 20:47:50.320"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_BUSCA}</arg>
+</arguments>
+<msg timestamp="20200116 20:47:51.135" level="INFO">Clicking element 'xpath://button[@id='h_search-btn']'.</msg>
+<status status="PASS" endtime="20200116 20:47:56.209" starttime="20200116 20:47:51.135"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:47:56.209" starttime="20200116 20:47:36.263"></status>
+</kw>
+<kw name="Quando o &quot;Smartphone Samsung Galaxy A70&quot; for localizado" library="pesquisa_produtos_resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${SMARTPHONE} em Promoção nas Lojas Americanas.com</arg>
+</arguments>
+<msg timestamp="20200116 20:47:56.536" level="INFO">Page title is 'Smartphone Samsung Galaxy A70 em Promoção nas Lojas Americanas.com'.</msg>
+<status status="PASS" endtime="20200116 20:47:56.536" starttime="20200116 20:47:56.211"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${CARD_PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:47:57.429" starttime="20200116 20:47:56.536"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:47:57.429" starttime="20200116 20:47:56.210"></status>
+</kw>
+<kw name="Então ao selecionar o produto, o site deverá acessar as informações &quot;Smartphone Samsung Galaxy A70&quot;" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:47:57.431" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:00.340" starttime="20200116 20:47:57.430"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${BTN_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:00.635" starttime="20200116 20:48:00.340"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:00.635" starttime="20200116 20:47:57.429"></status>
+</kw>
+<kw name="E verificar se o &quot;Smartphone Samsung Galaxy A70&quot; é entregue/vendido pelo &quot;${TXT_LOJA}&quot;" library="pesquisa_produtos_resource">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SMARTPHONE}' == '${TXT_LOJAEXTERNA}'</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJAEXTERNA}</arg>
+<arg>ELSE Run Keywords</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJA}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:00.637" starttime="20200116 20:48:00.637"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:00.637" starttime="20200116 20:48:00.636"></status>
+</kw>
+<kw name="E verificar o valor para pagamento à vista" library="pesquisa_produtos_resource">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("price__SalesPrice-ej7lo8-2 kjGSBk TextUI-sc-12tokcy-0 bLZSPZ")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorProduto}</var>
+</assign>
+<msg timestamp="20200116 20:48:01.839" level="INFO">${ValorProduto} = R$ 1.671,12</msg>
+<status status="PASS" endtime="20200116 20:48:01.839" starttime="20200116 20:48:00.639"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorProduto}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:01.841" starttime="20200116 20:48:01.839"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:01.841" starttime="20200116 20:48:00.638"></status>
+</kw>
+<kw name="E verificar o valor do cashback" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_FORMAPAGAMENTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:01.842" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:02.554" starttime="20200116 20:48:01.842"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:02.974" starttime="20200116 20:48:02.554"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:02.974" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[4]/div[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:03.533" starttime="20200116 20:48:02.974"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_TEXTOAME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:03.765" starttime="20200116 20:48:03.534"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("SpacingUI-pvph4q-0 fHTSIH ViewUI-sc-1ijittn-6 iXIDWU")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:48:04.179" level="INFO">${ValorCashback} = R$ 1.899,00 com Ame no cartão de crédito em até 12x de R$ 158,25 s/ juros e receba R$ 379,80 (20% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:04.179" starttime="20200116 20:48:03.765"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>${ValorCashback}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:04.180" level="INFO">${Novo_ValorCashback} = R$ 1.899,00 com Ame no cartão de crédito em até 12x de R$ 158,25 s/ juros e receba R$ 379,80 (20% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:04.180" starttime="20200116 20:48:04.179"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>R$ 1.899,00 com Ame no cartão de crédito em até 12x de R$ 158,25 s/ juros e receba</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:48:04.180" level="INFO">${ValorCashback} =  R$ 379,80 (20% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:04.180" starttime="20200116 20:48:04.180"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorCashback}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:04.181" starttime="20200116 20:48:04.181"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_FECHAR_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:04.182" level="INFO">Clicking element 'xpath://*[@class='CloseSvg-sc-1393p9h-3 jZbbfx SvgUI-xoytwh-0 hNadwU']'.</msg>
+<status status="PASS" endtime="20200116 20:48:04.762" starttime="20200116 20:48:04.182"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:04.762" level="INFO">Simulating Mouse Over on element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:05.707" starttime="20200116 20:48:04.762"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:05.707" starttime="20200116 20:48:01.841"></status>
+</kw>
+<kw name="E verificar o valor do frete" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:05.921" starttime="20200116 20:48:05.708"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:05.921" level="INFO">Clicking element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:06.379" starttime="20200116 20:48:05.921"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>${CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:06.379" level="INFO">Typing text '17012-647' into text field 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:07.209" starttime="20200116 20:48:06.379"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:07.842" starttime="20200116 20:48:07.209"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:07.842" level="INFO">Clicking button 'xpath://button[@id='freight-field-button']'.</msg>
+<status status="PASS" endtime="20200116 20:48:09.027" starttime="20200116 20:48:07.842"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>receber em até</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:10.042" starttime="20200116 20:48:09.027"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:10.273" starttime="20200116 20:48:10.042"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[2]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete}</var>
+</assign>
+<msg timestamp="20200116 20:48:10.686" level="INFO">${ValorFrete} = R$ 4,99</msg>
+<status status="PASS" endtime="20200116 20:48:10.686" starttime="20200116 20:48:10.273"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[6]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete1}</var>
+</assign>
+<msg timestamp="20200116 20:48:11.100" level="INFO">${ValorFrete1} = Seja</msg>
+<status status="PASS" endtime="20200116 20:48:11.100" starttime="20200116 20:48:10.686"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:11.101" starttime="20200116 20:48:11.100"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:11.101" starttime="20200116 20:48:11.101"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${ValorFrete1}' == 'Seja'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${ValorFrete}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log to Console</arg>
+<arg>${ValorFrete}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorFrete}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:11.103" starttime="20200116 20:48:11.102"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:11.103" starttime="20200116 20:48:11.102"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:11.103" starttime="20200116 20:48:11.101"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:11.103" starttime="20200116 20:48:05.708"></status>
+</kw>
+<kw name="E o prazo de entrega" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_FRETE}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:11.331" starttime="20200116 20:48:11.104"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[1]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega}</var>
+</assign>
+<msg timestamp="20200116 20:48:11.744" level="INFO">${DataEntrega} = 8 dias úteis</msg>
+<status status="PASS" endtime="20200116 20:48:11.744" starttime="20200116 20:48:11.331"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[5]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega1}</var>
+</assign>
+<msg timestamp="20200116 20:48:12.157" level="INFO">${DataEntrega1} = Americanas.com</msg>
+<status status="PASS" endtime="20200116 20:48:12.157" starttime="20200116 20:48:11.744"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:12.157" starttime="20200116 20:48:12.157"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:12.158" starttime="20200116 20:48:12.157"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${DataEntrega1}' == 'Americanas.com'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${DataEntrega}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log to Console</arg>
+<arg>${DataEntrega}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${DataEntrega}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:12.159" starttime="20200116 20:48:12.158"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:12.159" starttime="20200116 20:48:12.158"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:12.159" starttime="20200116 20:48:12.158"></status>
+</kw>
+<kw name="Fechar navegador" library="start_end_browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200116 20:48:14.492" starttime="20200116 20:48:12.160"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:14.492" starttime="20200116 20:48:12.160"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:14.492" starttime="20200116 20:48:11.104"></status>
+</kw>
+<tags>
+<tag>BuscarProduto01</tag>
+</tags>
+<status status="PASS" endtime="20200116 20:48:14.493" critical="yes" starttime="20200116 20:47:36.262"></status>
+</test>
+<test id="s1-t2" name="Caso de teste 02: Buscar e verificar informações do produto Smartphone Motorola One Vision">
+<kw name="Dado que será necessário realizar a busca do produto &quot;Smartphone Motorola One Vision&quot;" library="pesquisa_produtos_resource">
+<kw name="Abrir navegador" library="start_end_browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${DEFAULT_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:14.497" level="INFO">Opening browser 'chrome' to base url 'https://www.americanas.com.br/'.</msg>
+<status status="PASS" endtime="20200116 20:48:23.604" starttime="20200116 20:48:14.497"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:23.809" starttime="20200116 20:48:23.604"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:23.809" starttime="20200116 20:48:23.809"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200116 20:48:28.170" starttime="20200116 20:48:23.810"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Americanas.com - A maior loja. Os menores preços.</arg>
+</arguments>
+<msg timestamp="20200116 20:48:28.376" level="INFO">Page title is 'Americanas.com - A maior loja. Os menores preços.'.</msg>
+<status status="PASS" endtime="20200116 20:48:28.376" starttime="20200116 20:48:28.170"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:28.376" starttime="20200116 20:48:14.497"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:29.010" starttime="20200116 20:48:28.376"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>${SMARTPHONE}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:29.010" level="INFO">Typing text 'Smartphone Motorola One Vision' into text field 'xpath://input[@id='h_search-input']'.</msg>
+<status status="PASS" endtime="20200116 20:48:29.876" starttime="20200116 20:48:29.010"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_BUSCA}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:29.877" level="INFO">Clicking element 'xpath://button[@id='h_search-btn']'.</msg>
+<status status="PASS" endtime="20200116 20:48:35.236" starttime="20200116 20:48:29.876"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:35.236" starttime="20200116 20:48:14.496"></status>
+</kw>
+<kw name="Quando o &quot;Smartphone Motorola One Vision&quot; for localizado" library="pesquisa_produtos_resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${SMARTPHONE} em Promoção nas Lojas Americanas.com</arg>
+</arguments>
+<msg timestamp="20200116 20:48:35.626" level="INFO">Page title is 'Smartphone Motorola One Vision em Promoção nas Lojas Americanas.com'.</msg>
+<status status="PASS" endtime="20200116 20:48:35.626" starttime="20200116 20:48:35.237"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${CARD_PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:36.370" starttime="20200116 20:48:35.626"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:36.370" starttime="20200116 20:48:35.237"></status>
+</kw>
+<kw name="Então ao selecionar o produto, o site deverá acessar as informações &quot;Smartphone Samsung Galaxy A70&quot;" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:36.372" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:40.548" starttime="20200116 20:48:36.372"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${BTN_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:41.360" starttime="20200116 20:48:40.548"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:41.360" starttime="20200116 20:48:36.371"></status>
+</kw>
+<kw name="E verificar se o &quot;Smartphone Motorola One Vision&quot; é entregue/vendido pelo &quot;${TXT_LOJA}&quot;" library="pesquisa_produtos_resource">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SMARTPHONE}' == '${TXT_LOJAEXTERNA}'</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJAEXTERNA}</arg>
+<arg>ELSE Run Keywords</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJA}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:41.363" starttime="20200116 20:48:41.361"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:41.363" starttime="20200116 20:48:41.361"></status>
+</kw>
+<kw name="E verificar o valor para pagamento à vista" library="pesquisa_produtos_resource">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("price__SalesPrice-ej7lo8-2 kjGSBk TextUI-sc-12tokcy-0 bLZSPZ")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorProduto}</var>
+</assign>
+<msg timestamp="20200116 20:48:41.986" level="INFO">${ValorProduto} = R$ 1.363,12</msg>
+<status status="PASS" endtime="20200116 20:48:41.986" starttime="20200116 20:48:41.365"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorProduto}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:41.987" starttime="20200116 20:48:41.986"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:41.988" starttime="20200116 20:48:41.364"></status>
+</kw>
+<kw name="E verificar o valor do cashback" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_FORMAPAGAMENTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:41.989" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:42.671" starttime="20200116 20:48:41.989"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:43.069" starttime="20200116 20:48:42.672"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:43.069" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[4]/div[1]'.</msg>
+<status status="PASS" endtime="20200116 20:48:43.602" starttime="20200116 20:48:43.069"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_TEXTOAME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:43.835" starttime="20200116 20:48:43.602"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("SpacingUI-pvph4q-0 fHTSIH ViewUI-sc-1ijittn-6 iXIDWU")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:48:44.250" level="INFO">${ValorCashback} = R$ 1.549,00 com Ame no cartão de crédito em até 12x de R$ 129,08 s/ juros e receba R$ 30,98 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:44.250" starttime="20200116 20:48:43.835"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>${ValorCashback}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:44.251" level="INFO">${Novo_ValorCashback} = R$ 1.549,00 com Ame no cartão de crédito em até 12x de R$ 129,08 s/ juros e receba R$ 30,98 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:44.251" starttime="20200116 20:48:44.250"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>R$ 1.899,00 com Ame no cartão de crédito em até 12x de R$ 158,25 s/ juros e receba</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:48:44.251" level="INFO">${ValorCashback} = R$ 1.549,00 com Ame no cartão de crédito em até 12x de R$ 129,08 s/ juros e receba R$ 30,98 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:48:44.251" starttime="20200116 20:48:44.251"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorCashback}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:44.252" starttime="20200116 20:48:44.252"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_FECHAR_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:44.253" level="INFO">Clicking element 'xpath://*[@class='CloseSvg-sc-1393p9h-3 jZbbfx SvgUI-xoytwh-0 hNadwU']'.</msg>
+<status status="PASS" endtime="20200116 20:48:44.833" starttime="20200116 20:48:44.253"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:44.834" level="INFO">Simulating Mouse Over on element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:45.773" starttime="20200116 20:48:44.833"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:45.773" starttime="20200116 20:48:41.988"></status>
+</kw>
+<kw name="E verificar o valor do frete" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:45.991" starttime="20200116 20:48:45.775"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:45.991" level="INFO">Clicking element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:46.447" starttime="20200116 20:48:45.991"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>${CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:46.447" level="INFO">Typing text '17012-647' into text field 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:48:47.245" starttime="20200116 20:48:46.447"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:47.884" starttime="20200116 20:48:47.245"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:47.884" level="INFO">Clicking button 'xpath://button[@id='freight-field-button']'.</msg>
+<status status="PASS" endtime="20200116 20:48:49.101" starttime="20200116 20:48:47.884"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>receber em até</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:49.791" starttime="20200116 20:48:49.101"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:50.022" starttime="20200116 20:48:49.791"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[2]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete}</var>
+</assign>
+<msg timestamp="20200116 20:48:50.441" level="INFO">${ValorFrete} = R$ 19,99</msg>
+<status status="PASS" endtime="20200116 20:48:50.441" starttime="20200116 20:48:50.022"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[6]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete1}</var>
+</assign>
+<msg timestamp="20200116 20:48:50.855" level="INFO">${ValorFrete1} = Seja</msg>
+<status status="PASS" endtime="20200116 20:48:50.855" starttime="20200116 20:48:50.441"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:50.856" starttime="20200116 20:48:50.855"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:50.857" starttime="20200116 20:48:50.856"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${ValorFrete1}' == 'Seja'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${ValorFrete}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log to Console</arg>
+<arg>${ValorFrete}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorFrete}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:50.859" starttime="20200116 20:48:50.858"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:50.859" starttime="20200116 20:48:50.858"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:50.860" starttime="20200116 20:48:50.857"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:50.860" starttime="20200116 20:48:45.774"></status>
+</kw>
+<kw name="E o prazo de entrega" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_FRETE}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:51.102" starttime="20200116 20:48:50.860"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[1]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega}</var>
+</assign>
+<msg timestamp="20200116 20:48:51.516" level="INFO">${DataEntrega} = 8 dias úteis</msg>
+<status status="PASS" endtime="20200116 20:48:51.516" starttime="20200116 20:48:51.102"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[5]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega1}</var>
+</assign>
+<msg timestamp="20200116 20:48:51.932" level="INFO">${DataEntrega1} = Americanas.com</msg>
+<status status="PASS" endtime="20200116 20:48:51.932" starttime="20200116 20:48:51.516"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:51.932" starttime="20200116 20:48:51.932"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:51.933" starttime="20200116 20:48:51.932"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${DataEntrega1}' == 'Americanas.com'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${DataEntrega}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log to Console</arg>
+<arg>${DataEntrega}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${DataEntrega}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:48:51.935" starttime="20200116 20:48:51.934"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:51.935" starttime="20200116 20:48:51.934"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:51.935" starttime="20200116 20:48:51.933"></status>
+</kw>
+<kw name="Fechar navegador" library="start_end_browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200116 20:48:54.178" starttime="20200116 20:48:51.936"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:54.178" starttime="20200116 20:48:51.935"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:48:54.178" starttime="20200116 20:48:50.860"></status>
+</kw>
+<tags>
+<tag>BuscarProduto02</tag>
+</tags>
+<status status="PASS" endtime="20200116 20:48:54.179" critical="yes" starttime="20200116 20:48:14.495"></status>
+</test>
+<test id="s1-t3" name="Caso de teste 03: Buscar e verificar informações do produto Smartphone Xiaomi Redmi Note 7">
+<kw name="Dado que será necessário realizar a busca do produto &quot;Smartphone Xiaomi Redmi Note 7&quot;" library="pesquisa_produtos_resource">
+<kw name="Abrir navegador" library="start_end_browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${DEFAULT_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200116 20:48:54.183" level="INFO">Opening browser 'chrome' to base url 'https://www.americanas.com.br/'.</msg>
+<status status="PASS" endtime="20200116 20:49:03.598" starttime="20200116 20:48:54.183"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:03.800" starttime="20200116 20:49:03.598"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:03.801" starttime="20200116 20:49:03.800"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200116 20:49:08.356" starttime="20200116 20:49:03.801"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Americanas.com - A maior loja. Os menores preços.</arg>
+</arguments>
+<msg timestamp="20200116 20:49:08.564" level="INFO">Page title is 'Americanas.com - A maior loja. Os menores preços.'.</msg>
+<status status="PASS" endtime="20200116 20:49:08.564" starttime="20200116 20:49:08.356"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:08.564" starttime="20200116 20:48:54.182"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:09.207" starttime="20200116 20:49:08.564"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SCR_BUSCA}</arg>
+<arg>${SMARTPHONE}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:09.207" level="INFO">Typing text 'Smartphone Xiaomi Redmi Note 7' into text field 'xpath://input[@id='h_search-input']'.</msg>
+<status status="PASS" endtime="20200116 20:49:10.085" starttime="20200116 20:49:09.207"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_BUSCA}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:10.086" level="INFO">Clicking element 'xpath://button[@id='h_search-btn']'.</msg>
+<status status="PASS" endtime="20200116 20:49:14.424" starttime="20200116 20:49:10.085"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:14.424" starttime="20200116 20:48:54.182"></status>
+</kw>
+<kw name="Quando o &quot;Smartphone Xiaomi Redmi Note 7&quot; for localizado" library="pesquisa_produtos_resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${SMARTPHONE} em Promoção nas Lojas Americanas.com</arg>
+</arguments>
+<msg timestamp="20200116 20:49:14.865" level="INFO">Page title is 'Smartphone Xiaomi Redmi Note 7 em Promoção nas Lojas Americanas.com'.</msg>
+<status status="PASS" endtime="20200116 20:49:14.865" starttime="20200116 20:49:14.425"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${CARD_PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:15.705" starttime="20200116 20:49:14.865"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:15.705" starttime="20200116 20:49:14.425"></status>
+</kw>
+<kw name="Então ao selecionar o produto, o site deverá acessar as informações &quot;Smartphone Samsung Galaxy A70&quot;" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:15.707" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]'.</msg>
+<status status="PASS" endtime="20200116 20:49:18.845" starttime="20200116 20:49:15.706"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${BTN_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:19.155" starttime="20200116 20:49:18.845"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:19.155" starttime="20200116 20:49:15.706"></status>
+</kw>
+<kw name="E verificar se o &quot;Smartphone Xiaomi Redmi Note 7&quot; é entregue/vendido pelo &quot;${TXT_LOJA}&quot;" library="pesquisa_produtos_resource">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SMARTPHONE}' == '${TXT_LOJAEXTERNA}'</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJAEXTERNA}</arg>
+<arg>ELSE Run Keywords</arg>
+<arg>Page Should Contain</arg>
+<arg>${TXT_LOJA}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:19.159" starttime="20200116 20:49:19.158"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:19.159" starttime="20200116 20:49:19.157"></status>
+</kw>
+<kw name="E verificar o valor para pagamento à vista" library="pesquisa_produtos_resource">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("price__SalesPrice-ej7lo8-2 kjGSBk TextUI-sc-12tokcy-0 bLZSPZ")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorProduto}</var>
+</assign>
+<msg timestamp="20200116 20:49:20.410" level="INFO">${ValorProduto} = R$ 1.799,99</msg>
+<status status="PASS" endtime="20200116 20:49:20.410" starttime="20200116 20:49:19.210"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorProduto}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:20.411" starttime="20200116 20:49:20.410"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:20.411" starttime="20200116 20:49:19.210"></status>
+</kw>
+<kw name="E verificar o valor do cashback" library="pesquisa_produtos_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_FORMAPAGAMENTO}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:20.412" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]'.</msg>
+<status status="PASS" endtime="20200116 20:49:21.005" starttime="20200116 20:49:20.412"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:21.525" starttime="20200116 20:49:21.005"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LNK_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:21.525" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[4]/div[1]'.</msg>
+<status status="PASS" endtime="20200116 20:49:22.037" starttime="20200116 20:49:21.525"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_TEXTOAME}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:22.267" starttime="20200116 20:49:22.037"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("SpacingUI-pvph4q-0 fHTSIH ViewUI-sc-1ijittn-6 iXIDWU")[0]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:49:22.683" level="INFO">${ValorCashback} = R$ 1.799,99 com Ame no cartão de crédito em até 12x de R$ 149,99 s/ juros e receba R$ 36,00 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:49:22.683" starttime="20200116 20:49:22.267"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>${ValorCashback}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:22.683" level="INFO">${Novo_ValorCashback} = R$ 1.799,99 com Ame no cartão de crédito em até 12x de R$ 149,99 s/ juros e receba R$ 36,00 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:49:22.684" starttime="20200116 20:49:22.683"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${Novo_ValorCashback}</arg>
+<arg>R$ 1.899,00 com Ame no cartão de crédito em até 12x de R$ 158,25 s/ juros e receba</arg>
+</arguments>
+<assign>
+<var>${ValorCashback}</var>
+</assign>
+<msg timestamp="20200116 20:49:22.684" level="INFO">${ValorCashback} = R$ 1.799,99 com Ame no cartão de crédito em até 12x de R$ 149,99 s/ juros e receba R$ 36,00 (2% de volta)</msg>
+<status status="PASS" endtime="20200116 20:49:22.684" starttime="20200116 20:49:22.684"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorCashback}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:22.685" starttime="20200116 20:49:22.684"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_FECHAR_AME}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:22.686" level="INFO">Clicking element 'xpath://*[@class='CloseSvg-sc-1393p9h-3 jZbbfx SvgUI-xoytwh-0 hNadwU']'.</msg>
+<status status="PASS" endtime="20200116 20:49:23.279" starttime="20200116 20:49:22.685"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:23.279" level="INFO">Simulating Mouse Over on element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:49:24.225" starttime="20200116 20:49:23.279"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:24.225" starttime="20200116 20:49:20.411"></status>
+</kw>
+<kw name="E verificar o valor do frete" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:24.441" starttime="20200116 20:49:24.226"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:24.441" level="INFO">Clicking element 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:49:24.897" starttime="20200116 20:49:24.441"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INP_CEP}</arg>
+<arg>${CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:24.897" level="INFO">Typing text '17012-647' into text field 'xpath://input[@id='freight-field']'.</msg>
+<status status="PASS" endtime="20200116 20:49:25.742" starttime="20200116 20:49:24.897"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:26.373" starttime="20200116 20:49:25.742"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CEP}</arg>
+</arguments>
+<msg timestamp="20200116 20:49:26.373" level="INFO">Clicking button 'xpath://button[@id='freight-field-button']'.</msg>
+<status status="PASS" endtime="20200116 20:49:27.574" starttime="20200116 20:49:26.373"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>receber em até</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:28.367" starttime="20200116 20:49:27.574"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${CEP}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:28.596" starttime="20200116 20:49:28.367"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[2]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete}</var>
+</assign>
+<msg timestamp="20200116 20:49:29.009" level="INFO">${ValorFrete} = cartão de crédito</msg>
+<status status="PASS" endtime="20200116 20:49:29.009" starttime="20200116 20:49:28.596"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[6]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${ValorFrete1}</var>
+</assign>
+<msg timestamp="20200116 20:49:29.422" level="INFO">${ValorFrete1} = R$ 16,92</msg>
+<status status="PASS" endtime="20200116 20:49:29.422" starttime="20200116 20:49:29.009"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:29.422" starttime="20200116 20:49:29.422"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:29.423" starttime="20200116 20:49:29.422"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${ValorFrete1}' == 'Seja'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${ValorFrete}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log To Console</arg>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ValorFrete1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:29.424" starttime="20200116 20:49:29.424"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:29.424" starttime="20200116 20:49:29.423"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:29.425" starttime="20200116 20:49:29.423"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:29.425" starttime="20200116 20:49:24.226"></status>
+</kw>
+<kw name="E o prazo de entrega" library="pesquisa_produtos_resource">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${TXT_FRETE}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:29.656" starttime="20200116 20:49:29.425"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[1]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega}</var>
+</assign>
+<msg timestamp="20200116 20:49:30.071" level="INFO">${DataEntrega} =  32gb</msg>
+<status status="PASS" endtime="20200116 20:49:30.071" starttime="20200116 20:49:29.656"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>dom:document.getElementsByClassName("TextUI-sc-12tokcy-0 LbEgj")[5]</arg>
+<arg>innerText</arg>
+</arguments>
+<assign>
+<var>${DataEntrega1}</var>
+</assign>
+<msg timestamp="20200116 20:49:30.483" level="INFO">${DataEntrega1} = 7 dias úteis</msg>
+<status status="PASS" endtime="20200116 20:49:30.483" starttime="20200116 20:49:30.071"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:30.483" starttime="20200116 20:49:30.483"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:30.484" starttime="20200116 20:49:30.483"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${DataEntrega1}' == 'Americanas.com'</arg>
+<arg>Run Keyword</arg>
+<arg>Log to Console</arg>
+<arg>${DataEntrega}</arg>
+<arg>ELSE</arg>
+<arg>Run Keyword</arg>
+<arg>Log To Console</arg>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Log To Console</arg>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${DataEntrega1}</arg>
+</arguments>
+<status status="PASS" endtime="20200116 20:49:30.485" starttime="20200116 20:49:30.484"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:30.485" starttime="20200116 20:49:30.484"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:30.485" starttime="20200116 20:49:30.484"></status>
+</kw>
+<kw name="Fechar navegador" library="start_end_browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200116 20:49:32.732" starttime="20200116 20:49:30.486"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:32.732" starttime="20200116 20:49:30.485"></status>
+</kw>
+<status status="PASS" endtime="20200116 20:49:32.732" starttime="20200116 20:49:29.425"></status>
+</kw>
+<tags>
+<tag>BuscarProduto03</tag>
+</tags>
+<status status="PASS" endtime="20200116 20:49:32.733" critical="yes" starttime="20200116 20:48:54.181"></status>
+</test>
+<status status="PASS" endtime="20200116 20:49:32.735" starttime="20200116 20:47:35.989"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">BuscarProduto01</stat>
+<stat fail="0" pass="1">BuscarProduto02</stat>
+<stat fail="0" pass="1">BuscarProduto03</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Pesquisa Produtos" pass="3">Pesquisa Produtos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
